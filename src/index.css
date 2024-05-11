@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+@layer base {
+  :root {
+    --color-black-tone: "rgb(1 27 51)";
+    font-size: 12px;
+  }
+
+  .max-container--lg {
+    max-width: 1240px;
+  }
+
+  .max-container {
+    max-width: 1040px;
+  }
+}
+
+
+
+@layer components {
+
+  .header .header-bg {
+    @apply top-0 left-0 w-full h-full bg-black-tone -z-1 opacity-95
+  }
+
+  .header .header-content .header-desktop-only {
+    @apply flex justify-center 
+  }
+
+  .header .header-content .header-desktop-only::after {
+    @apply content-['→']
+  }
+
+  .header .header-content .header-mobile-only {
+    @apply flex md:hidden 
+  }
+
+}
+
+
