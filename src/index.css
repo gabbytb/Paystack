@@ -145,15 +145,23 @@
     /* Styling Top-Bar */
     .top_bar_wrapper {
         @apply
+            h-141
             py-4
             px-6
             text-10xl/8
             text-white
+            font-graphik
             tracking-normal-wide
             bg-slate-800 
             flex 
             justify-center 
             items-center
+        ;
+    }
+
+    .top_bar_wrapper::after {
+        @apply
+           content-["→"] animate-ping duration-300 delay-300
         ;
     }
 
@@ -228,7 +236,7 @@
             flex 
         ;
     }
-    
+
 }
 
 

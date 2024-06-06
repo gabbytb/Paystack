@@ -729,6 +729,7 @@ h1, h2, h3, h4, h5, span {
 
 .top_bar_wrapper {
   display: flex;
+  height: 4.1rem;
   align-items: center;
   justify-content: center;
   --tw-bg-opacity: 1;
@@ -737,11 +738,27 @@ h1, h2, h3, h4, h5, span {
   padding-bottom: 1rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  font-family: Graphik;
   font-size: 1.4rem;
   line-height: 2rem;
   letter-spacing: 0.002em;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.top_bar_wrapper::after {
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  transition-delay: 300ms;
+  transition-duration: 300ms;
+  --tw-content: "→";
+  content: var(--tw-content);
 }
 
 /* Setting Logo Width */

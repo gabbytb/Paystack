@@ -14,6 +14,20 @@ module.exports = {
           'light-green-hover': 'var(--bg-color-light-green-hover)',
         }
       },
+      height: {
+        '141': "4.1rem",
+      },
+      keyframes: {
+        horizontalPulse: {
+          0%, 10% {
+            transform: translate(2px);
+        }
+        
+        5% {
+            transform: translate(50%);
+        }
+        }
+      }
       margin: {
         '1.8': '0.4rem',
       },
