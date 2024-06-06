@@ -141,6 +141,7 @@
 
 
 @layer components {
+    
     .top_bar_wrapper {
         @apply
             py-4
@@ -189,7 +190,7 @@
             capitalize
         ;
     }
-    
+
 }
 
 
