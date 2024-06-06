@@ -119,6 +119,8 @@
 
     :root {
         --bg-color-light-gray: rgb(249, 251, 252);
+        --bg-color-light-green: rgb(59, 183, 94);
+        --bg-color-light-green-hover: rgb(65, 170, 94);
         --root-font-size: 10px;
         --root-font-family: sans-serif;
         --root-line-height: 1.15;
@@ -193,26 +195,37 @@
             mb-2
         ;
     }
-    .menu-item .sub-menu .submenu-info p {
+    .nav-menu .menu-item .sub-menu .submenu-info p {
         @apply 
             text-10xl/normal
             font-normal
             tracking-normal
         ;
     }
-    .menu-item .sub-menu p {
+    .nav-menu .menu-item .sub-menu p {
         @apply 
             text-base
             text-skin-light-gray
             font-semibold
         ;
     }
-    .menu-item .sub-menu a {
+    .nav-menu .menu-item .sub-menu a {
         @apply
             text-2xl
             font-graphik
             font-medium
             capitalize
+        ;
+    }  
+
+    .nav-menu .menu-item .sub-menu {
+        @apply 
+            hidden
+        ;
+    }
+    .nav-menu .menu-item:hover .sub-menu {
+        @apply 
+            flex 
         ;
     }
     

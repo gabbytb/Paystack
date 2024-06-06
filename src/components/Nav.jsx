@@ -6,7 +6,10 @@ import {
      menuDevelopers,
      menuSupport,
 } from "../constants";
-import { SubMenuLeftCard, SubMenuRightCard } from "./";
+import { 
+    SubMenuLeftCard, SubMenuRightCard,
+    ButtonLink, 
+ } from "./";
 
 
 
@@ -32,11 +35,11 @@ const Nav = () => {
                         <LogoIcon />
                     </Link>
 
-                    <ul className="flex space-x-8 w-full">
+                    <ul className="flex space-x-8 h-16">
                         {/* Menu 1 */}
-                        <li className="menu-item h-16 relative">
+                        <li className="menu-item relative">
                             <Link to="#" className="flex items-center">why paystack <span className="ml-1.8"></span></Link>
-                            <div className="flex justify-between shadow-lg rounded-lg min-w-max min-h-max absolute top-12 left-0">
+                            <div className="flex justify-between shadow-lg rounded-lg min-w-max min-h-max absolute top-14 left-0">
                                 {/* Left Menu */}
                                 <div className="bg-white px-10 py-14 flex flex-col gap-y-12 sub-menu">
                                     {
@@ -84,23 +87,23 @@ const Nav = () => {
 
 
                         {/* Menu 2 */}
-                        <li className="menu-item h-16 relative">
+                        <li className="menu-item relative">
                             <Link to="http://paystack.com/wall-of-love" className="flex">customers</Link>
                         </li>
                         {/* Menu 2 */}
 
 
                         {/* Menu 3 */}
-                        <li className="menu-item h-16 relative">
+                        <li className="menu-item relative">
                             <Link to="http://paystack.com/pricing" className="flex">pricing</Link>
                         </li>
                         {/* Menu 3 */}
 
 
                         {/* Menu 4 */}
-                        <li className="menu-item h-16 relative">
+                        <li className="menu-item relative">
                             <Link to="#" className="flex items-center">learn <span className="ml-1.8"></span></Link>
-                            <div className="hidden justify-between shadow-lg rounded-lg min-w-max min-h-max absolute top-12 left-0">
+                            <div className="flex justify-between shadow-lg rounded-lg min-w-max min-h-max absolute top-14 left-0">
 
                                 {/* Left Menu */}
                                 <div className="bg-white px-10 py-14 flex flex-col gap-y-12 sub-menu">
@@ -118,8 +121,8 @@ const Nav = () => {
                                 {/* Right Menu */}
                                 <div className="flex flex-col px-10 py-14 bg-skin-light-gray sub-menu">
                                     <div>
-                                        <p className="uppercase mb-2">your growth stage</p>
-                                        <ul>
+                                        <p className="uppercase mb-5">your growth stage</p>
+                                        <ul className="space-y-4">
                                             {
                                                 menuFourSecond.map((item) => {
                                                     return (
@@ -139,12 +142,12 @@ const Nav = () => {
 
 
                 <div className="flex">
-                    <ul className="flex">
+                    <ul className="flex space-x-8 h-16">
                         {/* Menu 5 */}
-                        <li className="menu-item h-16 relative">
+                        <li className="menu-item relative">
                             <Link to="#" className="flex items-center">developers <span className="ml-1.8"></span></Link>
-                            <div className="hidden shadow-lg rounded-lg absolute top-12 left-0">
-                                <div className="bg-white p-8 flex flex-col sub-menu">
+                            <div className="shadow-lg rounded-lg absolute top-16 left-0 min-w-max">
+                                <div className="flex flex-col p-8 space-y-4 bg-white sub-menu">
                                     {
                                         menuDevelopers.map((item) => {
                                             return (
@@ -159,10 +162,10 @@ const Nav = () => {
 
 
                         {/* Menu 6 */}
-                        <li className="menu-item h-16 relative">
+                        <li className="menu-item relative">
                             <Link to="#" className="flex items-center">support <span className="ml-1.8"></span></Link>
-                            <div className="hidden shadow-lg rounded-lg absolute top-12 left-0">
-                                <div className="bg-white p-8 flex flex-col sub-menu">
+                            <div className="shadow-lg rounded-lg absolute top-16 left-0 min-w-max">
+                                <div className="flex flex-col p-8 space-y-4 bg-white sub-menu">
                                     {
                                         menuSupport.map((item) => {
                                             return (
@@ -174,6 +177,24 @@ const Nav = () => {
                             </div>
                         </li>
                         {/* Menu 6 */}
+
+                        
+                        {/* Log-in */}
+                        <li className="menu-item">
+                            <Link to="https://dashboard.paystack.com/#/login">login</Link>
+                        </li>
+                        {/* Log-in */}
+
+
+                        {/* Sign Up Button */}
+                        <li className="menu-item">
+                            <ButtonLink 
+                                btnProps="bg-skin-light-green hover:bg-skin-light-green-hover text-white font-semibold font-graphik px-6 py-5 rounded-lg"
+                                btnLink="https://dashboard.paystack.com/#/dashboard"
+                                btnText="Create free account"
+                            />
+                        </li>
+                        {/* Sign Up Button */}
                     </ul>
                 </div>
             </nav>

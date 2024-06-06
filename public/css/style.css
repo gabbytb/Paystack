@@ -598,6 +598,8 @@ video {
 
 :root {
   --bg-color-light-gray: rgb(249, 251, 252);
+  --bg-color-light-green: rgb(59, 183, 94);
+  --bg-color-light-green-hover: rgb(65, 170, 94);
   --root-font-size: 10px;
   --root-font-family: sans-serif;
   --root-line-height: 1.15;
@@ -777,24 +779,32 @@ h1, h2, h3, h4, h5, span {
   letter-spacing: 0.01em;
 }
 
-.menu-item .sub-menu .submenu-info p {
+.nav-menu .menu-item .sub-menu .submenu-info p {
   font-size: 1.4rem;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
 }
 
-.menu-item .sub-menu p {
+.nav-menu .menu-item .sub-menu p {
   font-size: 1rem;
   font-weight: 600;
   color: var(--text-color-light-gray);
 }
 
-.menu-item .sub-menu a {
+.nav-menu .menu-item .sub-menu a {
   font-family: Graphik;
   font-size: 1.5rem;
   font-weight: 500;
   text-transform: capitalize;
+}
+
+.nav-menu .menu-item .sub-menu {
+  display: none;
+}
+
+.nav-menu .menu-item:hover .sub-menu {
+  display: flex;
 }
 
 .absolute {
@@ -809,12 +819,12 @@ h1, h2, h3, h4, h5, span {
   left: 0px;
 }
 
-.top-12 {
-  top: 3rem;
+.top-14 {
+  top: 3.5rem;
 }
 
-.mb-2 {
-  margin-bottom: 0.5rem;
+.top-16 {
+  top: 4rem;
 }
 
 .mb-5 {
@@ -833,10 +843,6 @@ h1, h2, h3, h4, h5, span {
   display: flex;
 }
 
-.hidden {
-  display: none;
-}
-
 .h-16 {
   height: 4rem;
 }
@@ -852,10 +858,6 @@ h1, h2, h3, h4, h5, span {
 
 .w-102\.5 {
   width: 28.5rem;
-}
-
-.w-full {
-  width: 100%;
 }
 
 .min-w-20 {
@@ -907,6 +909,10 @@ h1, h2, h3, h4, h5, span {
   background-color: var(--bg-color-light-gray);
 }
 
+.bg-skin-light-green {
+  background-color: var(--bg-color-light-green);
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -926,6 +932,11 @@ h1, h2, h3, h4, h5, span {
   padding-right: 4.8rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .py-14 {
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
@@ -941,8 +952,26 @@ h1, h2, h3, h4, h5, span {
   padding-bottom: 1.2rem;
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.font-graphik {
+  font-family: Graphik;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
 .uppercase {
   text-transform: uppercase;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .shadow-lg {
@@ -954,3 +983,7 @@ h1, h2, h3, h4, h5, span {
 /* @layer utilities {
 
 } */
+
+.hover\:bg-skin-light-green-hover:hover {
+  background-color: var(--bg-color-light-green-hover);
+}

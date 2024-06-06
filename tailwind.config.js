@@ -10,6 +10,8 @@ module.exports = {
         skin: {
           'light-gray': 'var(--bg-color-light-gray)',
           'dark-blue': 'var(--root-color)',
+          'light-green': 'var(--bg-color-light-green)',
+          'light-green-hover': 'var(--bg-color-light-green-hover)',
         }
       },
       margin: {
