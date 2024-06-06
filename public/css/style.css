@@ -597,12 +597,12 @@ video {
 }
 
 :root {
+  --bg-color-light-gray: rgb(249, 251, 252);
   --root-font-size: 10px;
   --root-font-family: sans-serif;
   --root-line-height: 1.15;
   --root-color: rgb(1, 27, 51);
   --text-color-light-gray: rgb(61, 94, 105);
-  --bg-color-light-gray: rgb(249, 251, 252);
 }
 
 html {
@@ -744,7 +744,7 @@ h1, h2, h3, h4, h5, span {
 
 /* Setting Logo Width */
 
-.nav-menu .brand_logo svg {
+.nav-menu .brand svg {
   width: 12rem;
 }
 
@@ -769,6 +769,7 @@ h1, h2, h3, h4, h5, span {
 }
 
 .nav-menu .menu-item .sub-menu .submenu-info h4 {
+  margin-bottom: 0.5rem;
   font-family: Boing;
   font-size: 1.6rem;
   font-weight: 500;
@@ -816,6 +817,18 @@ h1, h2, h3, h4, h5, span {
   margin-bottom: 0.5rem;
 }
 
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.ml-1 {
+  margin-left: 0.25rem;
+}
+
+.ml-1\.8 {
+  margin-left: 0.4rem;
+}
+
 .flex {
   display: flex;
 }
@@ -841,12 +854,12 @@ h1, h2, h3, h4, h5, span {
   width: 28.5rem;
 }
 
-.w-20 {
-  width: 5rem;
-}
-
 .w-full {
   width: 100%;
+}
+
+.min-w-20 {
+  min-width: 5rem;
 }
 
 .min-w-max {
@@ -870,10 +883,6 @@ h1, h2, h3, h4, h5, span {
   column-gap: 2.5rem;
 }
 
-.gap-y-10 {
-  row-gap: 2.5rem;
-}
-
 .gap-y-12 {
   row-gap: 3rem;
 }
@@ -884,13 +893,14 @@ h1, h2, h3, h4, h5, span {
   margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.rounded-lg {
-  border-radius: 0.5rem;
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
-.bg-green-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(21 128 61 / var(--tw-bg-opacity));
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
 .bg-skin-light-gray {
@@ -906,9 +916,19 @@ h1, h2, h3, h4, h5, span {
   padding: 2rem;
 }
 
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .px-19\.6 {
   padding-left: 4.8rem;
   padding-right: 4.8rem;
+}
+
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 
 .py-4 {

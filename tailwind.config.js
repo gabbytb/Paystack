@@ -12,6 +12,9 @@ module.exports = {
           'dark-blue': 'var(--root-color)',
         }
       },
+      margin: {
+        '1.8': '0.4rem',
+      },
       padding: {
         '4.8': '1.2rem',
         '19.6': '4.8rem',
@@ -49,7 +52,7 @@ module.exports = {
       '11xl': '1.6rem',
     },
     letterSpacing: {
-      'none': '0',
+      'normal': '0',
       'normal-wide': '0.002em',
       'normal-wider': '0.01em',
 

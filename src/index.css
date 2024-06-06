@@ -118,13 +118,12 @@
     }
 
     :root {
+        --bg-color-light-gray: rgb(249, 251, 252);
         --root-font-size: 10px;
         --root-font-family: sans-serif;
         --root-line-height: 1.15;
         --root-color: rgb(1, 27, 51);
         --text-color-light-gray: rgb(61, 94, 105);
-        --bg-color-light-gray: rgb(249, 251, 252);
-
     }
 
     html {
@@ -136,7 +135,6 @@
     h1, h2, h3, h4, h5, span {
         color: var(--root-color);
     }
-  
 }
 
 
@@ -158,7 +156,7 @@
     }
 
     /* Setting Logo Width */
-    .nav-menu .brand_logo svg {
+    .nav-menu .brand svg {
         @apply
             w-48
         ;
@@ -192,13 +190,14 @@
             capitalize
             font-boing
             tracking-normal-wider
+            mb-2
         ;
     }
     .menu-item .sub-menu .submenu-info p {
         @apply 
             text-10xl/normal
             font-normal
-            tracking-none
+            tracking-normal
         ;
     }
     .menu-item .sub-menu p {

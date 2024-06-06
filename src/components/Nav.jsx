@@ -28,17 +28,17 @@ const Nav = () => {
             {/* Main Menu */}
             <nav className="flex justify-between py-4.8 px-19.6 nav-menu">
                 <div className="flex items-center gap-x-10">
-                    <Link to="/" alt="brand logo" className="brand_logo">
+                    <Link to="/" alt="brand logo" className="brand">
                         <LogoIcon />
                     </Link>
 
                     <ul className="flex space-x-8 w-full">
                         {/* Menu 1 */}
                         <li className="menu-item h-16 relative">
-                            <Link to="#" className="flex items-center">why paystack <span></span></Link>
+                            <Link to="#" className="flex items-center">why paystack <span className="ml-1.8"></span></Link>
                             <div className="flex justify-between shadow-lg rounded-lg min-w-max min-h-max absolute top-12 left-0">
                                 {/* Left Menu */}
-                                <div className="bg-green-700 p-8 flex flex-col gap-y-12 sub-menu">
+                                <div className="bg-white px-10 py-14 flex flex-col gap-y-12 sub-menu">
                                     {
                                         menuOneFirst.map((item) => {
                                             return (
@@ -51,10 +51,10 @@ const Nav = () => {
 
 
                                 {/* Right Menu */}
-                                <div className="flex flex-col gap-y-10 bg-skin-light-gray sub-menu">
+                                <div className="flex flex-col px-10 py-14 gap-y-12 bg-skin-light-gray sub-menu">
                                     <div>
-                                        <p className="uppercase mb-2">your growth stage</p>
-                                        <ul>
+                                        <p className="uppercase mb-5">your growth stage</p>
+                                        <ul className="space-y-4">
                                             {
                                                 menuOneSecond.map((item) => {
                                                     return (
@@ -65,8 +65,8 @@ const Nav = () => {
                                         </ul>
                                     </div>
                                     <div>
-                                        <p className="uppercase mb-2">your business type</p>
-                                        <ul>
+                                        <p className="uppercase mb-5">your business type</p>
+                                        <ul className="space-y-4">
                                             {
                                                 menuOneThird.map((item) => {
                                                     return (
@@ -99,11 +99,11 @@ const Nav = () => {
 
                         {/* Menu 4 */}
                         <li className="menu-item h-16 relative">
-                            <Link to="#" className="flex items-center">learn <span></span></Link>
+                            <Link to="#" className="flex items-center">learn <span className="ml-1.8"></span></Link>
                             <div className="hidden justify-between shadow-lg rounded-lg min-w-max min-h-max absolute top-12 left-0">
 
                                 {/* Left Menu */}
-                                <div className="bg-white p-8 flex flex-col gap-y-12 sub-menu">
+                                <div className="bg-white px-10 py-14 flex flex-col gap-y-12 sub-menu">
                                     {
                                         menuFourFirst.map((item) => {
                                             return (
@@ -116,7 +116,7 @@ const Nav = () => {
 
 
                                 {/* Right Menu */}
-                                <div className="flex flex-col bg-skin-light-gray sub-menu">
+                                <div className="flex flex-col px-10 py-14 bg-skin-light-gray sub-menu">
                                     <div>
                                         <p className="uppercase mb-2">your growth stage</p>
                                         <ul>
@@ -142,7 +142,7 @@ const Nav = () => {
                     <ul className="flex">
                         {/* Menu 5 */}
                         <li className="menu-item h-16 relative">
-                            <Link to="#" className="flex items-center">developers <span></span></Link>
+                            <Link to="#" className="flex items-center">developers <span className="ml-1.8"></span></Link>
                             <div className="hidden shadow-lg rounded-lg absolute top-12 left-0">
                                 <div className="bg-white p-8 flex flex-col sub-menu">
                                     {
@@ -160,7 +160,7 @@ const Nav = () => {
 
                         {/* Menu 6 */}
                         <li className="menu-item h-16 relative">
-                            <Link to="#" className="flex items-center">support <span></span></Link>
+                            <Link to="#" className="flex items-center">support <span className="ml-1.8"></span></Link>
                             <div className="hidden shadow-lg rounded-lg absolute top-12 left-0">
                                 <div className="bg-white p-8 flex flex-col sub-menu">
                                     {
