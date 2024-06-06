@@ -437,9 +437,182 @@ video {
   display: none;
 }
 
+@font-face {
+  font-family: "Boing";
+
+  font-style: normal;
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  src: url('./assets/fonts/boing/boing_semibold_web.eot');
+
+  src: local("Boing SemiBold"),
+            local("Boing-Semibold"),
+            local("Boing Semibold WEB"),
+            local("Boing"),
+            url('./assets/fonts/boing/boing_semibold_web.woff') format("woff"),
+            url('./assets/fonts/boing/boing_semibold_web.ttf') format("truetype"),
+            url('./assets/fonts/boing/boing_semibold_web.eot?#iefix') format("embedded-opentype"),
+            url('./assets/fonts/boing/boing_semibold_web.svg#WEBBoing-Semibold') format("svg");
+
+  text-rendering:optimizeLegibility;
+
+  unicode-range: U+000-5FF
+}
+
+@font-face {
+  font-family: "Graphik";
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  font-display: fallback;
+
+  src: url('./assets/fonts/graphik/graphik_light.eot');
+
+  src: local("Graphik Light"),
+            local("Graphik-Light"),
+            url('./assets/fonts/graphik/graphik_light.ttf') format("truetype"),
+            url('./assets/fonts/graphik/graphik_light.eot?#iefix') format("embedded-opentype"),
+            url('./assets/fonts/graphik/graphik_light.woff') format("woff"),
+            url('./assets/fonts/graphik/graphik_light.svg#Graphik-Light') format("svg");
+
+  text-rendering:optimizeLegibility;
+
+  unicode-range: U+000-5FF
+}
+
+@font-face {
+  font-family: "Graphik";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: fallback;
+
+  src: url('./assets/fonts/graphik/graphik_regular.eot');
+
+  src: local("Graphik Regular"),
+            local("Graphik-Regular"),
+            url('./assets/fonts/graphik/graphik_regular.ttf') format("truetype"),
+            url('./assets/fonts/graphik/graphik_regular.eot?#iefix') format("embedded-opentype"),
+            url('./assets/fonts/graphik/graphik_regular.svg#Graphik-Regular') format("svg");
+
+  text-rendering:optimizeLegibility;
+
+  unicode-range: U+000-5FF
+}
+
+@font-face {
+  font-family: "Graphik";
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  font-display: fallback;
+
+  src: url('./assets/fonts/graphik/graphik_medium.eot');
+
+  src: local("Graphik Medium"),
+            local("Graphik-Medium"),
+            url('./assets/fonts/graphik/graphik_medium.eot?#iefix') format("embedded-opentype"),
+            url('./assets/fonts/graphik/graphik_medium.woff') format("woff"),
+            url('./assets/fonts/graphik/graphik_medium.ttf') format("truetype"),
+            url('./assets/fonts/graphik/graphik_medium.svg#Graphik-Medium') format("svg");
+
+  text-rendering:optimizeLegibility;
+
+  unicode-range: U+000-5FF
+}
+
+@font-face {
+  font-family: "Graphik";
+
+  font-display: fallback;
+
+  font-style: normal;
+
+  font-weight: 600;
+
+  src: url('./assets/fonts/graphik/graphik_semibold.eot');
+
+  src: local("Graphik Semibold"),
+            local("Graphik-Semibold"),
+            url('./assets/fonts/graphik/graphik_semibold.woff2') format("woff2"),
+            url('./assets/fonts/graphik/graphik_semibold.woff') format("woff"),
+            url('./assets/fonts/graphik/graphik_semibold.ttf') format("truetype"),
+            url('./assets/fonts/graphik/graphik_semibold.svg#Graphik-Semibold') format("svg");
+
+  text-rendering:optimizeLegibility;
+
+  unicode-range: U+000-5FF
+}
+
+@font-face {
+  font-family: "Tiempos Headline";
+
+  font-style: normal;
+
+  font-display: swap;
+
+  font-weight: 600;
+
+  src: local("Tiempos Headline Bold"),
+            local("TiemposHeadline-Bold"),
+            url('./assets/fonts/tiempos/TiemposHeadline-Bold.eot?#iefix') format("embedded-opentype"),
+            url('./assets/fonts/tiempos/TiemposHeadline-Bold.woff') format("woff"),
+            url('./assets/fonts/tiempos/TiemposHeadline-Bold.ttf') format("truetype"),
+            url('./assets/fonts/tiempos/TiemposHeadline-Bold.svg#TiemposHeadline-Bold') format("svg");
+
+  src: url('./assets/fonts/tiempos/TiemposHeadline-Bold.eot');
+
+  unicode-range: U+000-5FF
+}
+
+@font-face {
+  font-family: "Moret";
+
+  font-style: normal;
+
+  font-display: swap;
+
+  font-weight: 400;
+
+  src: url('./assets/fonts/moret/Moret-Regular.eot');
+
+  src: local("Moret Regular"), 
+            local("Moret Regular"),
+            url('./assets/fonts/moret/Moret-Regular.woff2') format("woff2"),
+            url('./assets/fonts/moret/Moret-Regular.woff') format("woff2"),
+            url('./assets/fonts/moret/Moret-Regular.eot?#iefix') format("embedded-opentype"),
+            url('./assets/fonts/moret/Moret-Regular.ttf') format("truetype"),
+            url('./assets/fonts/moret/Moret-Regular.svg#Moret-Regular') format("svg");
+
+  unicode-range: U+000-5FF
+}
+
 :root {
-  --color-black-tone: "rgb(1 27 51)";
-  font-size: 12px;
+  --root-font-size: 10px;
+  --root-font-family: sans-serif;
+  --root-line-height: 1.15;
+  --root-text-color: rgb(1, 27, 51);
+  --text-color-light-gray: rgb(61, 94, 105);
+  --bg-color-light-gray: rgb(249, 251, 252);
+}
+
+html {
+  font-size: var(--root-font-size);
+  font-family: var(--root-font-family);
+  line-height: var(--root-line-height);
+}
+
+h1, h2, h3, h4, h5 {
+  color: var(--root-text-color);
 }
 
 *, ::before, ::after {
@@ -550,34 +723,50 @@ video {
   --tw-contain-style:  ;
 }
 
-.header .header-bg {
-  top: 0px;
-  left: 0px;
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  background-color: var(--color-black-tone);
-  opacity: 0.95;
-}
-
-.header .header-content .header-desktop-only {
+.top_bar_wrapper {
   display: flex;
+  align-items: center;
   justify-content: center;
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: 0.002em;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.header .header-content .header-desktop-only::after {
-  --tw-content: '→';
-  content: var(--tw-content);
+.nav-menu a > svg {
+  width: 12rem;
 }
 
-.header .header-content .header-mobile-only {
-  display: flex;
+.submenu-left .submenu-info h4 {
+  font-family: Boing;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 0.01em;
 }
 
-@media (min-width: 768px) {
-  .header .header-content .header-mobile-only {
-    display: none;
-  }
+.submenu-left .submenu-info p {
+  font-size: 1.4rem;
+}
+
+.submenu-right p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-color-light-gray);
+}
+
+.submenu-right a {
+  font-family: Graphik;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: capitalize;
 }
 
 .absolute {
@@ -588,8 +777,75 @@ video {
   position: relative;
 }
 
-.h-28 {
-  height: 7rem;
+.inset-12 {
+  inset: 3rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
 
+.flex {
+  display: flex;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.min-h-max {
+  min-height: -webkit-max-content;
+  min-height: max-content;
+}
+
+.w-20 {
+  width: 5rem;
+}
+
+.min-w-max {
+  min-width: -webkit-max-content;
+  min-width: max-content;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.gap-y-10 {
+  row-gap: 2.5rem;
+}
+
+.gap-y-12 {
+  row-gap: 3rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.bg-skin-light-gray {
+  background-color: var(--bg-color-light-gray);
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+/* @layer utilities {
+
+} */

@@ -4,42 +4,203 @@
 
 
 
-
 @layer base {
-  :root {
-    --color-black-tone: "rgb(1 27 51)";
-    font-size: 12px;
-  }
 
-  .max-container--lg {
-    max-width: 1240px;
-  }
+    @font-face {
+        font-family: "Boing";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url('./assets/fonts/boing/boing_semibold_web.eot');
+        src: local("Boing SemiBold"),
+            local("Boing-Semibold"),
+            local("Boing Semibold WEB"),
+            local("Boing"),
+            url('./assets/fonts/boing/boing_semibold_web.woff') format("woff"),
+            url('./assets/fonts/boing/boing_semibold_web.ttf') format("truetype"),
+            url('./assets/fonts/boing/boing_semibold_web.eot?#iefix') format("embedded-opentype"),
+            url('./assets/fonts/boing/boing_semibold_web.svg#WEBBoing-Semibold') format("svg");
+        text-rendering:optimizeLegibility;
+        unicode-range: U+000-5FF
+    }
+    
+    @font-face {
+        font-family: "Graphik";
+        font-style: normal;
+        font-weight: 300;
+        font-display: fallback;
+        src: url('./assets/fonts/graphik/graphik_light.eot');
+        src: local("Graphik Light"),
+            local("Graphik-Light"),
+            url('./assets/fonts/graphik/graphik_light.ttf') format("truetype"),
+            url('./assets/fonts/graphik/graphik_light.eot?#iefix') format("embedded-opentype"),
+            url('./assets/fonts/graphik/graphik_light.woff') format("woff"),
+            url('./assets/fonts/graphik/graphik_light.svg#Graphik-Light') format("svg");
+        text-rendering:optimizeLegibility;
+        unicode-range: U+000-5FF
+    }
+        
+    @font-face {
+        font-family: "Graphik";
+        font-style: normal;
+        font-weight: 400;
+        font-display: fallback;
+        src: url('./assets/fonts/graphik/graphik_regular.eot');
+        src: local("Graphik Regular"),
+            local("Graphik-Regular"),
+            url('./assets/fonts/graphik/graphik_regular.ttf') format("truetype"),
+            url('./assets/fonts/graphik/graphik_regular.eot?#iefix') format("embedded-opentype"),
+            url('./assets/fonts/graphik/graphik_regular.svg#Graphik-Regular') format("svg");
+        text-rendering:optimizeLegibility;unicode-range: U+000-5FF
+    }
+    
+    @font-face {
+        font-family: "Graphik";
+        font-style: normal;
+        font-weight: 500;
+        font-display: fallback;
+        src: url('./assets/fonts/graphik/graphik_medium.eot');
+        src: local("Graphik Medium"),
+            local("Graphik-Medium"),
+            url('./assets/fonts/graphik/graphik_medium.eot?#iefix') format("embedded-opentype"),
+            url('./assets/fonts/graphik/graphik_medium.woff') format("woff"),
+            url('./assets/fonts/graphik/graphik_medium.ttf') format("truetype"),
+            url('./assets/fonts/graphik/graphik_medium.svg#Graphik-Medium') format("svg");
+        text-rendering:optimizeLegibility;
+        unicode-range: U+000-5FF
+    }
+    
+    @font-face {
+        font-family: "Graphik";
+        font-display: fallback;
+        font-style: normal;
+        font-weight: 600;
+        src: url('./assets/fonts/graphik/graphik_semibold.eot');
+        src: local("Graphik Semibold"),
+            local("Graphik-Semibold"),
+            url('./assets/fonts/graphik/graphik_semibold.woff2') format("woff2"),
+            url('./assets/fonts/graphik/graphik_semibold.woff') format("woff"),
+            url('./assets/fonts/graphik/graphik_semibold.ttf') format("truetype"),
+            url('./assets/fonts/graphik/graphik_semibold.svg#Graphik-Semibold') format("svg");
+        text-rendering:optimizeLegibility;
+        unicode-range: U+000-5FF
+    }
+    
+    @font-face {
+        font-family: "Tiempos Headline";
+        font-style: normal;
+        font-display: swap;
+        font-weight: 600;
+        src: local("Tiempos Headline Bold"),
+            local("TiemposHeadline-Bold"),
+            url('./assets/fonts/tiempos/TiemposHeadline-Bold.eot?#iefix') format("embedded-opentype"),
+            url('./assets/fonts/tiempos/TiemposHeadline-Bold.woff') format("woff"),
+            url('./assets/fonts/tiempos/TiemposHeadline-Bold.ttf') format("truetype"),
+            url('./assets/fonts/tiempos/TiemposHeadline-Bold.svg#TiemposHeadline-Bold') format("svg");
+        src: url('./assets/fonts/tiempos/TiemposHeadline-Bold.eot');
+        unicode-range: U+000-5FF
+    }
+    
+    @font-face {
+        font-family: "Moret";
+        font-style: normal;
+        font-display: swap;
+        font-weight: 400;
+        src: url('./assets/fonts/moret/Moret-Regular.eot');
+        src: local("Moret Regular"), 
+            local("Moret Regular"),
+            url('./assets/fonts/moret/Moret-Regular.woff2') format("woff2"),
+            url('./assets/fonts/moret/Moret-Regular.woff') format("woff2"),
+            url('./assets/fonts/moret/Moret-Regular.eot?#iefix') format("embedded-opentype"),
+            url('./assets/fonts/moret/Moret-Regular.ttf') format("truetype"),
+            url('./assets/fonts/moret/Moret-Regular.svg#Moret-Regular') format("svg");
+        unicode-range: U+000-5FF
+    }
 
-  .max-container {
-    max-width: 1040px;
-  }
+    :root {
+        --root-font-size: 10px;
+        --root-font-family: sans-serif;
+        --root-line-height: 1.15;
+        --root-text-color: rgb(1, 27, 51);
+        --text-color-light-gray: rgb(61, 94, 105);
+        --bg-color-light-gray: rgb(249, 251, 252);
+
+    }
+
+    html {
+        font-size: var(--root-font-size);
+        font-family: var(--root-font-family);
+        line-height: var(--root-line-height);
+    }
+
+    h1, h2, h3, h4, h5 {
+        color: var(--root-text-color);
+    }
+  
 }
-
 
 
 @layer components {
-
-  .header .header-bg {
-    @apply top-0 left-0 w-full h-full bg-black-tone -z-1 opacity-95
-  }
-
-  .header .header-content .header-desktop-only {
-    @apply flex justify-center 
-  }
-
-  .header .header-content .header-desktop-only::after {
-    @apply content-['→']
-  }
-
-  .header .header-content .header-mobile-only {
-    @apply flex md:hidden 
-  }
-
+    .top_bar_wrapper {
+        @apply
+            py-4
+            px-6
+            text-10xl/8
+            text-white
+            tracking-normal-wide
+            bg-slate-800 
+            flex 
+            justify-center 
+            items-center
+        ;
+    }
+    .nav-menu a > svg {
+        @apply
+            w-48
+        ;
+    }
+    .submenu-left .submenu-info h4 {
+        @apply
+            text-11xl 
+            font-medium 
+            capitalize
+            font-boing
+            tracking-normal-wider
+        ;
+    }
+    .submenu-left .submenu-info p {
+        @apply 
+            text-10xl
+           
+        ;
+    }
+    .submenu-right p {
+        @apply 
+            text-base
+            text-skin-light-gray
+            font-semibold
+        ;
+    }
+    .submenu-right a {
+        @apply
+            text-2xl
+            font-graphik
+            font-medium
+            capitalize
+        ;
+    }
 }
 
 
+
+
+
+
+
+
+
+
+
+/* @layer utilities {
+
+} */
