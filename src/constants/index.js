@@ -117,3 +117,35 @@ export const menuFourSecond = [
         textInfo: "media kit",
     },    
 ]
+export const menuDevelopers = [
+    {
+        linkURI: 'https://paystack.com/developers',
+        textInfo: "overview",
+    },
+    {
+        linkURI: 'https://developers.paystack.co',
+        textInfo: "documentation",
+    },
+    {
+        linkURI: 'https://paystack.com/integrations',
+        textInfo: "integrations",
+    },
+    {
+        linkURI: 'https://status.paystack.com',
+        textInfo: "status page",
+    },
+]
+export const menuSupport = [
+    {
+        linkURI: 'https://paystack.com/help',
+        textInfo: "Quick Help",
+    },
+    {
+        linkURI: 'https://paystack.com/contact',
+        textInfo: "Contact Us",
+    },
+    {
+        linkURI: 'https://paystack.com/lookup',
+        textInfo: "Why was I debited?",
+    },
+]

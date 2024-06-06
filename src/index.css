@@ -121,7 +121,7 @@
         --root-font-size: 10px;
         --root-font-family: sans-serif;
         --root-line-height: 1.15;
-        --root-text-color: rgb(1, 27, 51);
+        --root-color: rgb(1, 27, 51);
         --text-color-light-gray: rgb(61, 94, 105);
         --bg-color-light-gray: rgb(249, 251, 252);
 
@@ -133,8 +133,8 @@
         line-height: var(--root-line-height);
     }
 
-    h1, h2, h3, h4, h5 {
-        color: var(--root-text-color);
+    h1, h2, h3, h4, h5, span {
+        color: var(--root-color);
     }
   
 }
@@ -142,6 +142,7 @@
 
 @layer components {
     
+    /* Styling Top-Bar */
     .top_bar_wrapper {
         @apply
             py-4
@@ -155,12 +156,36 @@
             items-center
         ;
     }
-    .nav-menu a > svg {
+
+    /* Setting Logo Width */
+    .nav-menu .brand_logo svg {
         @apply
             w-48
         ;
     }
-    .submenu-left .submenu-info h4 {
+
+    /* Styling Menu-Items */
+    .nav-menu .menu-item {
+        @apply
+            flex
+            items-center
+            text-2xl
+            font-medium
+            font-graphik
+            -tracking-normal-wider
+            capitalize
+        ;
+    }
+
+    /* Styling Nav-Menu DropDown */
+    .nav-menu .menu-item a > span {
+        border-style: solid;
+        border-width: 4px 4px 0 4px;
+        border-color: var(--root-color) transparent transparent transparent;
+    }
+
+
+    .nav-menu .menu-item .sub-menu .submenu-info h4 {
         @apply
             text-11xl 
             font-medium 
@@ -169,20 +194,21 @@
             tracking-normal-wider
         ;
     }
-    .submenu-left .submenu-info p {
+    .menu-item .sub-menu .submenu-info p {
         @apply 
-            text-10xl
-           
+            text-10xl/normal
+            font-normal
+            tracking-none
         ;
     }
-    .submenu-right p {
+    .menu-item .sub-menu p {
         @apply 
             text-base
             text-skin-light-gray
             font-semibold
         ;
     }
-    .submenu-right a {
+    .menu-item .sub-menu a {
         @apply
             text-2xl
             font-graphik
@@ -190,7 +216,7 @@
             capitalize
         ;
     }
-
+    
 }
 
 

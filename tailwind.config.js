@@ -9,12 +9,20 @@ module.exports = {
       backgroundColor: {
         skin: {
           'light-gray': 'var(--bg-color-light-gray)',
+          'dark-blue': 'var(--root-color)',
         }
+      },
+      padding: {
+        '4.8': '1.2rem',
+        '19.6': '4.8rem',
       },
       textColor: {
         skin: {
           'light-gray': 'var(--text-color-light-gray)',
         }
+      },
+      width: {
+        '102.5': '28.5rem',
       },
     },
     fontFamily: {
@@ -41,8 +49,9 @@ module.exports = {
       '11xl': '1.6rem',
     },
     letterSpacing: {
+      'none': '0',
       'normal-wide': '0.002em',
-      'normal-wider': '0.01em'
+      'normal-wider': '0.01em',
 
     },
   },

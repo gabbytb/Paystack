@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const SubMenuLeftCard = ({ linkURI, iconURI, textInfo, subTextInfo, }) => {
   return (
-    <Link to={linkURI} className="flex">
+    <Link to={linkURI} className="flex w-102.5">
         <div className="w-20 h-50 submenu-icon">
             <img src={iconURI} alt={textInfo} />
         </div>
