@@ -777,8 +777,12 @@ h1, h2, h3, h4, h5 {
   position: relative;
 }
 
-.inset-12 {
-  inset: 3rem;
+.left-0 {
+  left: 0px;
+}
+
+.top-12 {
+  top: 3rem;
 }
 
 .mb-2 {
@@ -787,6 +791,10 @@ h1, h2, h3, h4, h5 {
 
 .flex {
   display: flex;
+}
+
+.h-48 {
+  height: 12rem;
 }
 
 .h-screen {
@@ -802,6 +810,10 @@ h1, h2, h3, h4, h5 {
   width: 5rem;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .min-w-max {
   min-width: -webkit-max-content;
   min-width: max-content;
@@ -811,12 +823,22 @@ h1, h2, h3, h4, h5 {
   flex-direction: column;
 }
 
+.items-center {
+  align-items: center;
+}
+
 .gap-y-10 {
   row-gap: 2.5rem;
 }
 
 .gap-y-12 {
   row-gap: 3rem;
+}
+
+.space-x-16 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(4rem * var(--tw-space-x-reverse));
+  margin-left: calc(4rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .rounded-lg {

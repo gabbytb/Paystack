@@ -1,4 +1,8 @@
-import { whyChoosePaystackDB, successRatesDB, demoDB } from "../assets/images"
+import { 
+    whyChoosePaystackDB, successRatesDB, demoDB, 
+    blogDB, guidesDB, tutorialsDB, decodeFintechDB 
+} from "../assets/icons"
+
 
 
 export const menuOneFirst = [
@@ -57,4 +61,59 @@ export const menuOneThird = [
         textInfo: "for betting",
     },    
 ]
-
+export const menuFourFirst = [
+    {
+        iconURI: blogDB,
+        linkURI: 'https://paystack.com/blog',
+        textInfo: "blog",
+        subTextInfo: "Original lessons about making the internet work for your business"
+    },
+    {
+        iconURI: guidesDB,
+        linkURI: 'https://paystack.com/guides',
+        textInfo: "guides",
+        subTextInfo: "Big ideas in payments, explained in simple English"
+    },
+    {
+        iconURI: tutorialsDB,
+        linkURI: 'https://decodefintech.com',
+        textInfo: "video tutorials",
+        subTextInfo: "Quick video tutorials on how to use Paystack",
+    },
+    {
+        iconURI: decodeFintechDB,
+        linkURI: 'https://decodefintech.com',
+        textInfo: "decode fintech",
+        subTextInfo: "The trade email newsletter and podcast for leaders in African fintech",
+    },
+]
+export const menuFourSecond = [
+    {
+        linkURI: 'https://paystack.com/about',
+        textInfo: "about us",
+    },
+    {
+        linkURI: 'https://paystack.com/changelog',
+        textInfo: "changelog",
+    },
+    {
+        linkURI: 'https://paystack.com/subscribe',
+        textInfo: "subscribe",
+    },
+    {
+        linkURI: 'https://paystack.com/compliance',
+        textInfo: "compliance",
+    },  
+    {
+        linkURI: 'https://paystack.com/careers',
+        textInfo: "careers",
+    },
+    {
+        linkURI: 'https://paystack.com/brand',
+        textInfo: "brand",
+    },
+    {
+        linkURI: 'https://paystack.com/media',
+        textInfo: "media kit",
+    },    
+]
