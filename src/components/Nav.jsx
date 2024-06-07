@@ -37,7 +37,7 @@ const Nav = () => {
 
                     <ul className="flex space-x-8 h-16">
                         {/* Menu 1 */}
-                        <li className="menu-item relative">
+                        <li className="menu-item has-dropwdown relative">
                             <Link to="#" className="flex items-center">why paystack <span className="ml-1.8"></span></Link>
                             <div className="flex justify-between shadow-lg rounded-lg min-w-max min-h-max absolute top-14 left-0">
                                 {/* Left Menu */}
@@ -101,7 +101,7 @@ const Nav = () => {
 
 
                         {/* Menu 4 */}
-                        <li className="menu-item relative">
+                        <li className="menu-item has-dropwdown relative">
                             <Link to="#" className="flex items-center">learn <span className="ml-1.8"></span></Link>
                             <div className="flex justify-between shadow-lg rounded-lg min-w-max min-h-max absolute top-14 left-0">
 
@@ -144,7 +144,7 @@ const Nav = () => {
                 <div className="flex">
                     <ul className="flex space-x-8 h-16">
                         {/* Menu 5 */}
-                        <li className="menu-item relative">
+                        <li className="menu-item has-dropwdown relative">
                             <Link to="#" className="flex items-center">developers <span className="ml-1.8"></span></Link>
                             <div className="shadow-lg rounded-lg absolute top-16 left-0 min-w-max">
                                 <div className="flex flex-col p-8 space-y-4 bg-white sub-menu">
@@ -162,7 +162,7 @@ const Nav = () => {
 
 
                         {/* Menu 6 */}
-                        <li className="menu-item relative">
+                        <li className="menu-item has-dropwdown relative">
                             <Link to="#" className="flex items-center">support <span className="ml-1.8"></span></Link>
                             <div className="shadow-lg rounded-lg absolute top-16 left-0 min-w-max">
                                 <div className="flex flex-col p-8 space-y-4 bg-white sub-menu">
@@ -195,6 +195,26 @@ const Nav = () => {
                             />
                         </li>
                         {/* Sign Up Button */}
+
+
+                        {/* Countries Flag */}
+                        <li className="menu-item cta relative">
+                            <Link to="#" alt="nigeria" className="h-16">
+                                <span className="u-flag-icon"></span>
+                            </Link>
+                            <div className="shadow-lg rounded-lg absolute top-16 left-0 min-w-max">
+                                <ul className="flex flex-col p-8 space-y-4 bg-white sub-menu">
+                                    <li>
+                                        <Link to="/civ-fr/" alt="">
+                                            <span></span>
+                                            <span>Côte d'Ivoire</span>
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        {/* Countries Flag */}
+
                     </ul>
                 </div>
             </nav>

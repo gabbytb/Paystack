@@ -1,11 +1,29 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
-    './public/index.html',
-    './src/**/*.{html,js,jsx,ts,tsx}',
+    "./public/index.html",
+    "./src/**/*.{html,js,jsx,ts,tsx}",
   ],
   theme: {
+    backgroundPosition: {
+      'top-left': '0, 0',
+      'x-axis': '-120% -120px',
+      's-axis': '12.6rem',
+    },
+    backgroundSize: {
+      'auto': 'auto',
+      'cover': 'cover',
+      'contain': 'contain',
+      '16': '4rem',
+      '50%': '50%',
+      '77%': '77%',
+      '110%': '110%',
+    },
     extend: {
+      animation: {
+        horizontalPulse: 'horizontalPulse 2.8s ease-in 3s infinite',
+      },
       backgroundColor: {
         skin: {
           'light-gray': 'var(--bg-color-light-gray)',
@@ -14,20 +32,22 @@ module.exports = {
           'light-green-hover': 'var(--bg-color-light-green-hover)',
         }
       },
+      backgroundImage: {
+          'ng': "url('/src/assets/images/ng.svg')",
+      },
       height: {
         '141': "4.1rem",
       },
       keyframes: {
         horizontalPulse: {
-          0%, 10% {
-            transform: translate(2px);
+          '0%, 100%': {
+              transform: "translate(2px)",
+          },
+          "5%": {
+              transform: "translate(50%)",
+          }
         }
-        
-        5% {
-            transform: translate(50%);
-        }
-        }
-      }
+      },
       margin: {
         '1.8': '0.4rem',
       },

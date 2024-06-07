@@ -161,7 +161,9 @@
 
     .top_bar_wrapper::after {
         @apply
-           content-["→"] animate-ping duration-300 delay-300
+           content-["→"] 
+           animate-horizontalPulse 
+           inline-flex
         ;
     }
 
@@ -186,12 +188,11 @@
     }
 
     /* Styling Nav-Menu DropDown */
-    .nav-menu .menu-item a > span {
+    .nav-menu .menu-item.has-dropwdown a span {
         border-style: solid;
         border-width: 4px 4px 0 4px;
         border-color: var(--root-color) transparent transparent transparent;
     }
-
 
     .nav-menu .menu-item .sub-menu .submenu-info h4 {
         @apply
@@ -233,7 +234,7 @@
     }
     .nav-menu .menu-item:hover .sub-menu {
         @apply 
-            flex 
+            flex
         ;
     }
 

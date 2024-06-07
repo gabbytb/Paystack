@@ -746,17 +746,22 @@ h1, h2, h3, h4, h5, span {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-@keyframes ping {
-  75%, 100% {
-    transform: scale(2);
-    opacity: 0;
+.top_bar_wrapper::after {
+  display: inline-flex;
+}
+
+@keyframes horizontalPulse {
+  0%, 100% {
+    transform: translate(2px);
+  }
+
+  5% {
+    transform: translate(50%);
   }
 }
 
 .top_bar_wrapper::after {
-  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-  transition-delay: 300ms;
-  transition-duration: 300ms;
+  animation: horizontalPulse 2.8s ease-in 3s infinite;
   --tw-content: "→";
   content: var(--tw-content);
 }
@@ -781,7 +786,7 @@ h1, h2, h3, h4, h5, span {
 
 /* Styling Nav-Menu DropDown */
 
-.nav-menu .menu-item a > span {
+.nav-menu .menu-item.has-dropwdown a span {
   border-style: solid;
   border-width: 4px 4px 0 4px;
   border-color: var(--root-color) transparent transparent transparent;
